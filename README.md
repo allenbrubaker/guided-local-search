@@ -20,6 +20,7 @@ Many famous combinatorial optimization problems can be seen as special cases of 
 The Guided Local Search (GLS) is one such iterative improvement meta-heuristic approach successfully applied to QAP.  It has been applied to combinatorial optimization problems including SAT, MAX-SAT, Vehicle Routing, Workforce Scheduling, Radio Link Frequency Assignment, Traveling Salesman, and Function Optimization.  It operates as an algorithmic framework utilizing a problem-specific local-search in navigating a modified solution landscape induced by an augmented objective function.  This augmented objective function is modified each time the local search reaches a local optimum by penalizing select features of the solution.  
 
 This paper proposes the following modifications to GLS:
+
 1. Incorporation of an iteration constrained aspiration criterion designed to further diversify the search similar to the mechanism seen in Taillard’s robust tabu search [4].
 2. Evaporation of feature penalties in the augmented objective function to combat too excessive a deformation of the original solution landscape similar to notions borrowed from ant colony optimization [5].
 3. Introduction of an intensification policy based on periodic executions of a steepest-descent search on the original objective function [6].  
@@ -46,15 +47,11 @@ The paper is structured as follows. In Section II related works for QAP is eluci
 
 **Readme**
 
-1.  Unzip the QAPSolver folder to any location you desire.
-
-2.  Along side the QAPSolver folder, create another folder called "Results".  The results from the application runs will be stored in this directory. 
-
-3.  Navigate to Setup.cpp, and scroll down to where you see lots of lines commented out.  Here you may choose to specify a filename (that will subsequently be output to the Results folder in csv format) and select any algorithms to run with any set of parameters.  Uncomment and use the existing ones if you should desire. 
-
-4.  Modify the number of runs via the Runs variable -- this means an algorithm will be averaged this many times, standard deviations calculated, and average run time of all 5 runs. 
-
-5.  Navigate to the QAPSolver folder and compile like this:
+1. Unzip the QAPSolver folder to any location you desire.
+2. Along side the QAPSolver folder, create another folder called "Results".  The results from the application runs will be stored in this directory.
+3. Navigate to Setup.cpp, and scroll down to where you see lots of lines commented out.  Here you may choose to specify a filename (that will subsequently be output to the Results folder in csv format) and select any algorithms to run with any set of parameters.  Uncomment and use the existing ones if you should desire.
+4. Modify the number of runs via the Runs variable -- this means an algorithm will be averaged this many times, standard deviations calculated, and average run time of all 5 runs.
+5. Navigate to the QAPSolver folder and compile like this:
 
 ```
 g++ *.cpp -O3 -o AppName
