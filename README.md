@@ -58,11 +58,9 @@ g++ *.cpp -O3 -o AppName
 nohup AppName &
 ```
 
-6.  Optionally, you may choose to set the Runs=1, and then you can see the progression of quality of solution by a number denoting the relative percentage deviation above the best known result.  
-
-7.  Important files of interest besides Setup.cpp are:  AlgoParms.cpp - Where all the different parameters for an algorithm run is designed.  Algorithm.cpp - All implementation for the various guided local searches, robust tabu search, etc.  
-
-8.  If you have any other questions, please don't hesitate to ask.   
+6. Optionally, you may choose to set the Runs=1, and then you can see the progression of quality of solution by a number denoting the relative percentage deviation above the best known result.
+7. Important files of interest besides Setup.cpp are:  AlgoParms.cpp - Where all the different parameters for an algorithm run is designed.  Algorithm.cpp - All implementation for the various guided local searches, robust tabu search, etc.
+8. If you have any other questions, please don't hesitate to ask.   
        
 
 
