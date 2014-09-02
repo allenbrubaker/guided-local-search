@@ -1,0 +1,1 @@
+This is a rudimentary scraper for parsing results from QAPLib.  For each benchmark, % error over the optimum of the state of the art algorithm applied on the particular benchmark is gleaned.   

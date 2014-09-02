@@ -1,0 +1,17 @@
+﻿<Window x:Class="QAPLibScraper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QAPLib Scraper" Height="183" Width="331">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBox Name="tbUrl"  />
+        <Button Name="btnScrape" Grid.Row="1" Content="Scrape!" Click="btnScrape_Click" />
+        <TextBox Name="tbResult" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="stretch" TextChanged="tbResult_TextChanged" IsReadOnly="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+        <StatusBar Grid.Row="3" Height="23"  Name="Status"  />
+    </Grid>
+</Window>
